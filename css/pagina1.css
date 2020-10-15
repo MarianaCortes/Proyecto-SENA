@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Arial';
+}
+.contenedor{
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #27496D;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    /*width: 100%;*/
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(28, 181, 224, 0.619), hsla(240, 100%, 14%, 0.666)), url(../img/gafas5.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+
+
+nav .logo img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+   
+}
+
+nav{
+    padding: 30px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+nav a{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Nuestro consultorio */
+
+.contenedor-a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+
+.icono-inicio, .contenido-textos{
+    width: 42%;
+    align-self: center;
+}
+
+
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    
+}
+
+.contenido-textos h3 span{
+    background: #00909E;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    padding: 3px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+   
+}
+
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* Nuestros servicios, portafolio*/
+
+.portafolio{
+    background-color: #f2f2f2;
+}
+
+.galeria{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+
+}
+
+.imagenes{
+    width: 45%;
+    margin-bottom: 20px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+
+.img1{
+    background-image: url(../img/cirugiaoftalmologica.jpeg);
+    background-size: cover;
+}
+.img2{
+    background-image: url(../img/examenesdiagnosticos.jpeg);
+    background-size: cover;
+}
+.img3{
+    background-image: url(../img/consultaexterna.jpeg);
+    background-size: cover;
+}
+.img4{
+    background-image: url(../img/optometriayonoseque.jpeg);
+    background-size: cover;
+}
+
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 145, 158, 0.632);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: white;
+
+}
+.imagenes:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* perfil medico */
+
+.Nuestro-equipo-médico{
+    background-color: white;
+    padding-top: 40px;
+    height: 400px;
+}
+
+.contenedores{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.contenedores .contenedor, .contenedorcito{
+    background: #00909E;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.contenedores .contenedorcito .imagen img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    
+}
+
+.contenedores .contenedorcito > .contenido{
+    width: 60%;
+    color: white;
+}
+
+.contenedores .contenedorcito > .contenido h4{
+    padding-top: 3px;
+}
+.contenedores .contenedorcito > .contenido p{
+    font-weight: 300;
+    padding-top: 2px;
+}
+
+/*footer*/
+
+footer{
+    background: gray;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content .cositas{
+    display: flex;
+    /* align-items: baseline; */
+}
+
+
+
+.contenedor-contactanos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #00909E;
+}
+
+.mediano{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Ubicacion{
+    width:35%;
+}
+.content{
+    text-align: center;
+}
+
+.content h4{
+    color: white;
+    font: bold;
+    border-bottom: 3px solid #00909E;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.content p{
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    /* padding-right: 90%; */
+}
+.content img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+iframe{
+    width: 100%;
+
+}
+
+
+/* VENTANAS EMERGENTES*/
+
+.ventana1, .ventana2, .ventana3, .ventana4{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 10;
+    display: none;
+
+}
+
+.ventanita{
+    background-color: white;
+    width: 55%;
+    height: 45%;
+    border-radius: 20px;
+    padding: 30px;
+    color: rgb(83, 81, 81);
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ventanita h2{
+    width: 90%;
+}
+.ventanita a{
+    width: 8%;
+    margin-top: -80px;
+    margin-right: -40px; 
+
+}
+.ventanita img{
+    width: 45%;
+    height: 75%;
+}
+.ventanita p{
+    padding: 5px;
+    width: 45%;
+    text-align: center;
+}
