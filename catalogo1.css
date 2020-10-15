@@ -1,0 +1,133 @@
+ /* *{
+     margin: 0%;
+}  */
+
+/* .formulario_publicar{
+    border: 1px solid red; 
+} */
+
+.formulario_publicar{
+    display: flex;
+}
+
+.formulario_publicar input[type="text"]{
+    margin-top: -100px;
+}
+
+.contenedorPrincipal{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cuadro_articulos{
+    /* border: 1px solid violet; */
+    width: 30%;
+    cursor: pointer;
+    background-color: white;
+}
+
+ /* .cuadro_articulos:hover{
+    cursor: pointer;
+}  */
+
+
+.cuadro_articulos img{
+    width: 80%;
+    right: 50px;
+    left: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    color: royalblue;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    text-transform: uppercase;
+}
+
+h5{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img{
+    margin-left: 45px;
+    margin-right: 50px;
+    border-radius: 8px;
+}
+
+.cuadro_articulos img:hover{
+    transform: scale(1.2);
+}
+
+.lentes{
+    background-image: url(imagenes/lentes.PNG);
+    background-size: cover;
+    background-position: bottom;
+    height: 780px;
+    width: 100%;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.lentes p{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    margin-right: 700px;
+    margin-top: 150px;
+}
+
+.fondoVideo{
+    height: 600px;
+    width: 100%;
+    margin: 5px;
+    /* background: linear-gradient(135deg, white, white, rgb(148, 253, 253), rgb(148, 253, 253)); */
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h1{
+    margin-left: 150px;
+    margin-right: 80px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+ .texto p{
+    color: white;
+    margin-left: 150px;
+    margin-right: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-right: 100px; */
+   /* margin-right: 100px; */
+} 
+
+.fondoVideo video{
+    width: 800px;
+    height: 500px;
+    padding-right: -900px;
+    /* margin-left: -150px; */
+}
