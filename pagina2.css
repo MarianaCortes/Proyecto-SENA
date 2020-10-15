@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+}
+.menu{ 
+    background-color: #2a7478; 
+    height: 70px;
+}    
+input{
+    display: none; 
+}    
+label img{ 
+    width: 100%; 
+}    
+label{
+    position: absolute; 
+    right: 15px;
+    top: 15px; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; 
+} 
+.cajitas{ 
+    border-radius: 10px; 
+    padding-top: 10px; 
+    position: absolute; 
+    top: -10px;
+    right: 30px; 
+    opacity: 0; 
+    transform: scaleY(.01); 
+    transition: all 1s; 
+}    
+nav ul li{ 
+    list-style: none; 
+    transition: all .5s;
+}    
+nav ul li a{ 
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    padding: 10px 80px; 
+    border-radius: 3px; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    transition: all .5s; 
+}    
+nav ul li a:hover{ 
+    background-color: #2a7478; 
+    color: black;
+}    
+nav ul li:hover{ 
+    transform: scale(1.2); 
+}    
+input:checked ~ .cajitas{ 
+    transform: scaleY(1); 
+    top: 60px; 
+    opacity: 1; 
+}
+.contenedor1{
+    background-color: white;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;    
+}
+.imagenes h2{
+    text-align: center;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    color: black;
+    padding-top: 45px;
+}
+
+.imagenes{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagenes a{
+    width: 50%;
+    padding-top: 98px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    background-color: gray;  
+    padding-left: 10px;
+}
+.imagenes a:hover{
+    transform: scale(1.2) rotate(10deg);
+    transition: 0.5s;
+}
+.imagenes a p{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: -20px;
+    padding-top: -40px;
+}
+
+.ventana{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+.foto{
+    background-image: url(Image2/IMG_17445678.jpg);
+    width: 60%;
+    height: 547px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagen1{
+    background-image: url(Image2/mision.jpg);
+}
+.imagen2{
+    background-image: url(Image2/thumbnail_IMG_1719.jpg);
+}
+.ventanita p{
+    padding: 5px;
+    width: 45%;
+    text-align: justify;
+    border-top: 1px solid rgba(68, 178, 241, 0.753);
+    border-bottom: 1px solid rgba(68, 178, 241, 0.753);
+}
+
+.activar{
+    top: 0px;
+    transform: scale(1);
+}
+.ventanita{
+    background-color: white;
+    width: 60%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+.ventanita h2{
+    width: 90%;
+}
+.ventanita a{
+    width: 8%;
+    position: absolute;
+    top: 1em;
+    right: 0.1em;
+}
+.ventanita img{
+    width: 40%;
+}
+.ventanita .img{
+    width: 200px;
+}

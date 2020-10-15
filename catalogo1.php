@@ -93,8 +93,9 @@
     
         <nav class="cajitas">
              <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Contactanos</a></li>
+            <li><a href="pagina1.html">Inicio</a></li>
+            <li><a href="pagina2.html">Nosotros</a></li>
+            <li><a href="formulario.html">Contáctenos</a></li>
             <li><a href="#">Calendario</a></li>
             <li><a href="catalogo1.php">Catalogo</a></li>
         

@@ -1,0 +1,174 @@
+*{
+    font-weight: bolder;
+}
+body{
+    margin: 0%;
+}
+.menu{ 
+    background-color: #2a7478; 
+    height: 70px;
+}    
+.menu input{
+    display: none; 
+}    
+.menu label img{ 
+    width: 100%; 
+}    
+.menu label{
+    position: absolute; 
+    right: 15px;
+    top: 15px; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; 
+} 
+.cajitas{ 
+    border-radius: 10px; 
+    position: absolute; 
+    top: -0px;
+    right: 30px; 
+    opacity: 0; 
+    transform: scaleY(.01); 
+    transition: all 1s; 
+    z-index: 100;
+}    
+nav ul li{ 
+    list-style: none; 
+    transition: all .5s 
+} 
+nav ul{
+    margin: 9px 0 0 0 ;
+}   
+nav ul li a{ 
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    padding: 10px 80px; 
+    border-radius: 3px; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    transition: all .5s; 
+}    
+nav ul li a:hover{ 
+    background-color: #2a7478; 
+    color: black;
+}    
+nav ul li:hover{ 
+    transform: scale(1.2); 
+}    
+.menu input:checked ~ .cajitas{ 
+    transform: scaleY(1); 
+    top: 60px; 
+    opacity: 1; 
+}
+.contenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+    margin-top: 1px;
+}
+form{
+    border: 15px inset rgba(0, 0, 0, 0.062);
+    background: linear-gradient(135deg, white, #4daaaf,  #3c8e92,  #2a7478);
+    width: 35%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: 100px;
+    margin-right: 10px;
+}
+fieldset{
+    border: 2px outset black;
+}
+form label, input{
+    display: block;
+}
+form label{
+    margin-bottom: 15px;
+}
+form input{
+    width: 150px;
+}
+.btn{
+    margin: 0px auto;
+    width: 115px;
+    height: 50px;
+    background: silver;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+}
+.RedesSociales{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    position: fixed;
+}
+.RedesSociales img{
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+.Cuadrados{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+.conteconta{
+    width: 40%;
+    background-color: #2a7478;
+    height: 480px;
+    margin-left: 390px;
+}
+.conteneconta{
+    width: 60%;
+    background: linear-gradient(270deg, white, #4daaaf);
+    height: 400px;
+    margin-top: 45px;
+    position: absolute;
+    align-items: right;
+    margin-left: 258px;
+}
+.conteneconta div{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.conteneconta div a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.conteneconta img{
+    width: 25px;
+    height: 25px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bolder;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.conteneconta div p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+

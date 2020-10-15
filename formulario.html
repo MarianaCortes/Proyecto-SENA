@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+
+</head>
+<body>
+    <div id="general"></div>
+    <div class="menu">
+        <input type="checkbox" id="Checkmenu">
+        <label for="Checkmenu"><img src="Image/imagen_menu.png"></label>
+    
+        <nav class="cajitas">
+            <ul>
+               <li><a href="pagina1.html">Inicio</a></li>
+               <li><a href="pagina2.html">Nosotros</a></li>
+               <li><a href="catalogo1.php">Cátalogo</a></li>
+               <li><a href="Pagina4.html">Calendario</a></li>
+               <li><a href="formulario.html">Contactenos</a></li>
+            </ul>
+        </nav>
+</div>
+<h2>¡Estamos para ayudarte!</h2>
+    <div class="contenido">
+        
+    
+    <form action="formulario.php" method="POST">
+       
+      
+        <label>
+            Nombre y Apellidos: <input name="apellidos">
+        </label>
+       
+        <label>
+            Telefono:
+            <input type="text" name="numero">
+        </label>
+       
+        <label>
+            Email:
+            <input type="email" name="correo">
+        </label>
+       
+        <label>
+            Dirección:
+            <input type= "direcion" name= direction>
+        </label>
+     
+        <label>
+            Mensaje:
+            <textarea name="descripcion" cols="65" rows="10"></textarea>
+
+        </label>
+
+    
+        <input type="submit" value="Enviar" class="btn" >
+
+
+
+    </form>
+    <div class="Cuadrados">
+    <div class="conteneconta">        
+        <h1>Nuestras redes</h1>
+        <div>
+         <a href="mailto:Optica@corvision.com.co"> <img src="Image/gmail.png" alt="">
+        <p>Optica@corvision.com.co </p></a>
+        </div>
+        <div>
+           <img src="Image/whatsapp.png" alt="">
+        <p>3155228281</p> 
+        </div>
+        
+        <div>
+           <img src="Image/receptor-del-telefono.png" alt="">
+        <p>(032)2254426</p> 
+        </div>
+        <div>
+           <img src="Image/pin-ubicacion.png" alt="">
+        <p>Ed. Vita Cll 26 # 36-15. Consultorio 202 </p> 
+        </div>
+        <div>
+            <a href="https://www.instagram.com/corvisionoptica/"target="_blank"
+            ><img src="Image/instagram.png" alt="" id="insta"><p>instagram.com/corvisionoptica</p></a>
+
+        </div>
+        <div>
+            <a href="https://www.facebook.com/opticacorvision/"target="_blank"><img src="Image/facebook.png" alt="" id="fb"><p>facebook.com/opticacorvision</p></a>
+        </div>
+        
+        
+    </div>
+    <div class="conteconta">
+    </div>
+    </div>
+    
+</div>
+</body>
+</html>
