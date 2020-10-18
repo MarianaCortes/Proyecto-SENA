@@ -6,8 +6,8 @@
 
     if($user != ""){
 ?>
-        <a href="cerrarsesion.php">SALIR</a>
-        <a href="citas.php">Voler</a>
+        <a href="cerrarsesion.php">SALIR</a><br><br>
+        <a href="citas.php">Volver</a>
 <?php        
     }else{
         header("location:login.php");
@@ -37,11 +37,11 @@
                         <td>Fecha</td>
                         <td>Hora</td>
                     </tr>";
-                $lista = mysqli_query($conectar, "SELECT * FROM $citas");
+                $lista = mysqli_query($conectar, "SELECT * FROM $pacientes");/** */
                 while($consultaLista = mysqli_fetch_array($lista)){
-                    $id = $consultaLista['id'];
+                    $id = $consultaLista['Documento'];/** */
                     $idEspecialista= $consultaLista['cc_especialista'];
-                    $idPaciente = $consultaLista['Id_paciente'];
+                    $idPaciente = $consultaLista['Documento'];
                     $fecha = $consultaLista['Fecha'];
                     $hora = $consultaLista['Hora'];
 
@@ -60,15 +60,15 @@
 
         if (isset($_POST['editar'])) {
             $idEditar = $_POST['identificador'];
-            $editar = mysqli_query($conectar, "SELECT * FROM $citas WHERE id = $idEditar");
+            $editar = mysqli_query($conectar, "SELECT * FROM $pacientes WHERE Documento = $idEditar");/* */
             while($consultaEditar = mysqli_fetch_array($editar)){
-                $idCita = $consultaEditar['id'];
+                // $idCita = $consultaEditar['Documento']; /*** */
                 $idEspecialista= $consultaEditar['cc_especialista'];
-                $idPaciente = $consultaEditar['Id_paciente'];
+                $idPaciente = $consultaEditar['Documento'];
                 $fecha = $consultaEditar['Fecha'];
                 $hora = $consultaEditar['Hora'];
                 echo "<form action='listaCitas.php' method='post'>
-                        <input type='hidden' name='id' value='$idCita'>
+                        <input type='hidden' name='id' value='$idPaciente'>   
                         <input type='text' name='idEsp' value='$idEspecialista'>
                         <input type='text' name='nombreP' value='$idPaciente'>
                         <input type='date' name='fechaN' value='$fecha'>
@@ -85,7 +85,7 @@
         }
         if (isset($_POST['eliminar'])) {
             $idEliminar = $_POST['identificador'];
-            mysqli_query($conectar, "DELETE FROM $citas WHERE id = '$idEliminar'");
+            mysqli_query($conectar, "DELETE FROM $pacientes WHERE Documento = '$idEliminar'");/**** */
             header("location:listaCitas.php");
         }
         if (isset($_POST['actualizar'])) {
@@ -95,8 +95,7 @@
             $fechaN = $_POST['fechaN'];
             $horaN = $_POST['horaN'];
 
-            mysqli_query($conectar, "UPDATE $citas SET cc_especialista='$idEsp', Id_paciente='$nombreP', Fecha='$fechaN', Hora='$horaN' WHERE id = '$id'");
-            // echo "<p> Se actualizó el registro </p>";
+            mysqli_query($conectar, "UPDATE $pacientes SET cc_especialista='$idEsp', Documento='$nombreP', Fecha='$fechaN', Hora='$horaN' WHERE Documento = '$id'");
             header("location:listaCitas.php");
         }
      echo "</div>";

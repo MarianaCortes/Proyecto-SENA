@@ -1,3 +1,22 @@
 table, tr, td{
     border: 1px solid black;
+    margin-top: 70px;
+    margin-left: 500px;
+    background: rgba(255, 255, 240, 0.767);
+}
+
+a{
+    text-decoration: whitesmoke;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+body{
+    display: cover;
+    background-color: rgb(52, 141, 163);
+    height: 40px;
+    position: static;
+    top: 1px;
+    background-size: cover;
+    width: 100%;
 }
