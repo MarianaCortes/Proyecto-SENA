@@ -1,17 +1,17 @@
 <?php
-    session_start();
+    // session_start();
 
-    error_reporting(0);
-    $user = $_SESSION['logeado'];
+    // error_reporting(0);
+    // $user = $_SESSION['logeado'];
 
-    if($user != ""){
+    // if($user != ""){
 ?>
-        <a href="cerrarsesion.php">SALIR</a>
-        <a href="citas.php">Agendar Citas</a>
+        <!-- <a href="cerrarsesion.php">SALIR</a>
+        <a href="citas.php">Agendar Citas</a> -->
 <?php        
-    }else{
-        // echo "<a href='login.php'>Administrar sitio</a>";
-    }
+    // }else{
+    //     echo "<a href='login.php'>Administrar sitio</a>";
+    // }
        
 ?>
 
@@ -96,8 +96,8 @@
             <li><a href="pagina1.html">Inicio</a></li>
             <li><a href="pagina2.html">Nosotros</a></li>
             <li><a href="formulario.html">Contáctenos</a></li>
-            <li><a href="#">Calendario</a></li>
-            <li><a href="catalogo1.php">Catalogo</a></li>
+            <li><a href="citas.php">Agendar cita</a></li>
+            <!-- <li><a href="catalogo1.php">Catalogo</a></li> -->
         
             </ul>
         </nav>
@@ -144,7 +144,7 @@
     <?php
         if($user != ""){      //si existe un usuario con sesión activa        
     ?>
-            <form class="formulario_publicar" action="catalogo1.php" method="post" enctype="multipart/form-data">
+            <!-- <form class="formulario_publicar" action="catalogo1.php" method="post" enctype="multipart/form-data">
                 <label>
                     Nombre Artículo:<br>
                 <input type="text" name="titulo" placeholder="Nombre..." autocomplete="off">
@@ -167,7 +167,7 @@
                 </label>
                 <br>
                 <input type="submit" value="PUBLICAR" name="btn_publicar">
-            </form>
+            </form> -->
     <?php
         }
     ?>

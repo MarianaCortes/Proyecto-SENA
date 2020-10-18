@@ -1,3 +1,4 @@
+
 <?php
     $host = "localhost"; //servidor al que se conecta
     $usuario = "root"; //Usuario con el que se ingresa a la base de datos

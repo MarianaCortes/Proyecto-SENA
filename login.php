@@ -64,7 +64,7 @@
                         session_start();
                         $_SESSION['logeado']= $usuario;
                         
-                        header("location:catalogo1.php");
+                        header("location:citas.php");
                     }
                     mysqli_free_result($datos);
                 }
