@@ -5,7 +5,7 @@ body{
     margin: 0%;
 }
 .menu{ 
-    background-color: #2a7478; 
+    background-color: #1CB5E0; 
     height: 70px;
 }    
 .menu input{
@@ -51,7 +51,7 @@ nav ul li a{
     transition: all .5s; 
 }    
 nav ul li a:hover{ 
-    background-color: #2a7478; 
+    background-color: #1CB5E0; 
     color: black;
 }    
 nav ul li:hover{ 
@@ -71,7 +71,7 @@ nav ul li:hover{
 }
 form{
     border: 15px inset rgba(0, 0, 0, 0.062);
-    background: linear-gradient(135deg, white, #4daaaf,  #3c8e92,  #2a7478);
+    background: linear-gradient(135deg, white, white,white,#1CB5E0, #1CB5E0, #1CB5E0);
     width: 35%;
     padding: 50px;
     display: flex;
@@ -126,13 +126,13 @@ h2{
 }
 .conteconta{
     width: 40%;
-    background-color: #2a7478;
+    background-color: #1CB5E0;
     height: 480px;
     margin-left: 390px;
 }
 .conteneconta{
     width: 60%;
-    background: linear-gradient(270deg, white, #4daaaf);
+    background: linear-gradient(270deg, white, #1CB5E0);
     height: 400px;
     margin-top: 45px;
     position: absolute;

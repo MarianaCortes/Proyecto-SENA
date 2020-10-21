@@ -87,7 +87,7 @@
     </div>
  
     <input type="checkbox" id="Checkmenu">
-    <label for="Checkmenu"><img src="imagenes/menu-abierto.png"></label>
+    <label for="Checkmenu"><img src="Image/imagen_menu.png"></label>
 <input type="checkbox" id="Checkmenu">
         <!-- <label for="Checkmenu"><img src="imagenes/menu-abierto.png"></label> -->
     
@@ -142,7 +142,7 @@
         </div>
 
     <?php
-        if($user != ""){      //si existe un usuario con sesión activa        
+        // if($user != ""){     // si existe un usuario con sesión activa    
     ?>
             <!-- <form class="formulario_publicar" action="catalogo1.php" method="post" enctype="multipart/form-data">
                 <label>
@@ -167,9 +167,9 @@
                 </label>
                 <br>
                 <input type="submit" value="PUBLICAR" name="btn_publicar">
-            </form> -->
+            </form>  -->
     <?php
-        }
+        // }
     ?>
 <?php
     include("conexion.php"); //conectarse a base de datos

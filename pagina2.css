@@ -2,7 +2,7 @@
     margin: 0px;
 }
 .menu{ 
-    background-color: #2a7478; 
+    background-color: #1CB5E0; 
     height: 70px;
 }    
 input{
@@ -45,7 +45,7 @@ nav ul li a{
     transition: all .5s; 
 }    
 nav ul li a:hover{ 
-    background-color: #2a7478; 
+    background-color: #1CB5E0; 
     color: black;
 }    
 nav ul li:hover{ 
